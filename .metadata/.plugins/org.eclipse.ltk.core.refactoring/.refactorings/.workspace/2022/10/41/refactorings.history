@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;EJER0_previos&apos;" deleteContents="false" description="Delete resource &apos;EJER0_previos&apos;" element1="/EJER0_previos" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1665650208784"/>&#x0A;<refactoring comment="Delete resource &apos;UF1_Programación_estructurada&apos;" deleteContents="false" description="Delete resource &apos;UF1_Programación_estructurada&apos;" element1="/UF1_Programación_estructurada" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1665650213936"/>
-</session>
