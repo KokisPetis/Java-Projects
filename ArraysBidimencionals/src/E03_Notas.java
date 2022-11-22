@@ -38,8 +38,10 @@ public class E03_Notas {
  
         int alumnos = 4;
         int examenes = 3;
-        
-   
+        int mediaexamen=0;
+        int mediaalumno=0;
+        int aluNotaMax=0;
+        int exNotaMax=0;
         
         double[][] notas = {{7,6,8},
                             {5,4,6},
@@ -47,21 +49,43 @@ public class E03_Notas {
                             {8,7,5}
         };
  
+double notamax=0;
+
+
+
+		//calcular media de cada alumno
+		for(int alu=0; alu<notas.length; alu++) {
+			int suma=0;
+			for(int ex=0; alu<notas[alu].length; alu++) {
+			
+				mediaalumno=suma/notas[alu].length;
+				System.out.printf("la nota media del alummo %");
+				
+				}
+		  	
+		}
+	
         
-        for(int alumn=0; alumn<alumnos; alumn++) {
+        //calcular media de cada examen
+        for(int ex=0; ex<notas[0].length; ex++) {
+        	int suma=0;
+        	for(int alu=0; alu<notas.length; alu++) {
+        		  suma+=notas[alu][ex];
+        		  //calcular cual es el examen con mas nota
+        		  if(notas[alu][ex]>notamax){
+        		        notamax= notas[alu][ex];
+        		        aluNotaMax=alu;
+        		        exNotaMax=ex;
+        	  }
+        	mediaexamen=suma/notas.length;
+        	System.out.printf("la media del examen %d es %f ",ex,mediaexamen);
         	
-        	double mediaalumno=((notas[alumn][0]+notas[alumn][1]+notas[alumn][2]) / 3);
-        	System.out.println("La nota media del alumno"+" "+(alumn+1)+" "+"es"+" "+mediaalumno);
-        	
-        };
-        
-        
-        for(int exam=0; exam<examenes; exam++) {
-        	double mediaexamen=((notas[0][exam]+notas[1][exam]+notas[2][exam]+notas[3][exam])/4);
-        	System.out.println("la nota media del examen"+" "+(exam+1)+" "+ "es"+ " "+mediaexamen);
         	}
- 
-        	
- 
+        } 
+        
+        
+        
+
     }
+   
 }
